@@ -8,13 +8,30 @@ A single-file browser tool that tests a JavaScript regular expression against sa
 
 Type a pattern, toggle the global, ignore-case, multiline, and dotall flags, and paste sample text. The tool highlights every match in the text, lists each match with its index and capture groups, and shows a running count. Invalid patterns report the error instead of breaking. Quick chips insert common patterns for email, URL, digits, hex color, IPv4, dates, and more.
 
-## How to use it
+## Use
 
 Open `index.html` in any browser, or use the hosted GitHub Pages version. Edit the pattern and test string, or tap a common-pattern chip to start from a known one. Matches update live. The matching engine is your browser's own JavaScript regular expression engine, so behavior matches what your code will see.
+
+## Why this exists
+
+Testing a regex should not mean pasting your patterns and sample data into a hosted service or writing a throwaway script. This is one HTML file that runs your pattern on your browser's own JavaScript regex engine, with no tracking and no network calls. MIT licensed.
 
 ## Privacy
 
 Runs entirely in your browser. No network calls, no analytics, no data stored. Your patterns and test text never leave the page.
+
+## Run locally
+
+```bash
+git clone https://github.com/0xelitesystem/regex-tester
+cd regex-tester
+```
+
+Open `index.html` in any browser. Or serve the folder with `python -m http.server 8000` and visit http://localhost:8000/.
+
+## Build
+
+No build step. The whole tool is one `index.html` file with its CSS, JavaScript and font subsets inline.
 
 ## More
 
