@@ -1,8 +1,8 @@
-# Regex Tester
+# JS Regex Capture Tester
 
 A single-file browser tool that tests a JavaScript regular expression against sample text with live match highlighting, capture groups, match positions, and a common-pattern reference.
 
-**Live demo:** https://0xelitesystem.github.io/regex-tester/
+**Live demo:** https://0xelitesystem.github.io/js-regex-capture-tester/
 
 ## What it does
 
@@ -23,8 +23,8 @@ Runs entirely in your browser. No network calls, no analytics, no data stored. Y
 ## Run locally
 
 ```bash
-git clone https://github.com/0xelitesystem/regex-tester
-cd regex-tester
+git clone https://github.com/0xelitesystem/js-regex-capture-tester
+cd js-regex-capture-tester
 ```
 
 Open `index.html` in any browser. Or serve the folder with `python -m http.server 8000` and visit http://localhost:8000/.
